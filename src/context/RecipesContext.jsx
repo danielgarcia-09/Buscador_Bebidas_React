@@ -13,6 +13,7 @@ const RecipesProvider = (props) => {
 
   const { name, category } = search;
 
+  
   useEffect(() => {
     if (API) {
       const obtainRecipeAPI = async () => {
@@ -24,6 +25,7 @@ const RecipesProvider = (props) => {
       };
       obtainRecipeAPI();
     }
+    // eslint-disable-next-line
   }, [search]);
 
   return (
